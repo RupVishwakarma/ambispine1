@@ -1,0 +1,56 @@
+:root {
+    --background-primary: #ffffff;
+    --background-secondary: #f0f0f0;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --accent-color: #007bff;
+    --border-color: #e0e0e0;
+    --header-bg: #ffffff;
+    --dropdown-bg: #ffffff;
+    --dropdown-hover: #f5f5f5;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  [data-theme='dark'] {
+    --background-primary: #1a1a1a;
+    --background-secondary: #2d2d2d;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --accent-color: #4da3ff;
+    --border-color: #404040;
+    --header-bg: #1a1a1a;
+    --dropdown-bg: #2d2d2d;
+    --dropdown-hover: #3d3d3d;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .theme-toggle {
+    position: relative;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: transparent;
+    padding: 8px;
+  }
+  
+  .theme-toggle:hover {
+    background-color: rgba(128, 128, 128, 0.1);
+  }
+  
+  .theme-icon {
+    font-size: 20px;
+    color: var(--text-primary);
+  }
+  
+  /* Apply theme to entire website */
+  body {
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }

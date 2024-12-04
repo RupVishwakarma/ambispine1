@@ -1,0 +1,102 @@
+.Bussiness_top{
+          position: relative;
+          height: 90vh;
+}
+.Business1{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+}
+.Bussiness_top .overlay{
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          width: 80%;
+          text-align: center;
+          color: white;
+          /* transform: translate(-50%, -50%); */
+          transform: translate(-50%, -50%);
+          
+}
+.Bussiness_top-header{
+          margin-top: 3rem ;
+          margin-bottom: 2rem;
+          font-size: 6rem;
+          font-weight: bolder;
+          /* margin-bottom: 3rem; */
+}
+.Bussiness_top_subtitle{
+          font-size: 1.5rem;
+          
+}
+
+.bussiness_desing_container{
+          width: 400px;
+          height: 300px;
+
+          
+}
+.bus_cus_head{
+      color: #084c94;
+      font-weight: 600;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+}
+.business_design{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: all 0.3s ease;
+}
+.business_design:hover{
+      transform: scale(1.2);
+}
+.business_mid{
+          
+          padding: 3rem 5rem;
+          background-color: rgb(43, 43, 232);
+          color: white;
+}
+.bussiness_services{
+          background-color: #004165;
+          padding: 3rem;
+          margin-top: 4rem;
+}
+
+ .bussiness_ser_cont{
+          background-color: #0a699e;
+          height: 400px;
+          padding: 2rem ;
+          margin: 1rem;
+          border-radius: 10px;
+          transition: all 0.2s ease-in;
+
+}
+.bussiness_ser_cont:hover{
+      background-color: #046294;
+      transform: scale(1.05);
+}
+.busines_icon{
+      font-size: 2.5rem;
+      color: white;
+      transition: all 0.2s ease-in;
+}
+.busines_icon:hover{
+      font-size: 2.8rem;
+      color: rgb(228, 223, 223);
+}
+.con_now_btn{
+      border: none;
+      background-color: hsla(0, 0%, 38%, 0.916);
+      padding: 5px 15px;
+      font-size: 1.3rem;
+      border-radius: 10px;
+      color: white;
+}
+.arro_icon{
+      font-size: 2rem;
+      transition: all 0.2s ease-in;
+}
+.con_now_btn:hover .arro_icon{
+font-size: 2.2rem;
+}

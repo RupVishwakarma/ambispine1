@@ -1,0 +1,879 @@
+
+/* ========------------- ======*/
+.contact {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.contact-header {
+  background-color: #4e4e4e;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.contact-header-content {
+  flex: 1;
+}
+
+.contact-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-header p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-header h2 {
+  font-size: 1.8rem;
+}
+
+.contact-image {
+  max-width: 40%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top:1rem;
+}
+
+.contact-services {
+  background-color: #f3f8f6;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.contact-services h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-buttons button {
+  background-color: white;
+  color: #333;
+  border: 1px solid #333;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-buttons  button:hover {
+  background-color: #333;
+  color: white;
+}
+
+
+
+
+
+.contact-form {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* .form-group label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  padding: 0 5px;
+  font-size: 20px;
+  color: #777;
+  transition: all 0.3s ease;
+  pointer-events: none;
+} */
+
+.form-group label {
+  position: absolute;
+  left: 15px;
+  top: 17px;
+  font-size: 16px;
+  color: #777;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  background-color: transparent;
+}
+
+.form-group.focused label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:not(:placeholder-shown) + label {
+  top: 0;
+  font-size: 12px;
+  color: #333;
+}
+
+.form-group.focused input,
+.form-group.focused textarea,
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-group textarea + label {
+  top: 20px;
+}
+
+.form-group.focused textarea + label,
+.form-group textarea:not(:placeholder-shown) + label {
+  top: -10px;
+}
+
+/* .form-group {
+  margin-bottom: 1.5rem;
+} */
+
+/* .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+} */
+
+.form-group .required {
+  color: #ff3860;
+  margin-left: 2px;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #4e4e4e;
+}
+
+/* #connect{
+  text-decoration: none;
+  color: #333;
+}
+#office1{
+  text-decoration: none;
+  color: #333;
+} */
+
+
+.submit-btn {
+  background-color: #4e4e4e;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
+.submit-btn:hover {
+  background-color: #333;
+}
+
+.error {
+  border-color: #ff3860 !important;
+}
+
+.error-message {
+  color: #ff3860;
+  font-size: 0.9rem;
+}
+
+.contact-buttons .mail-button {
+  background-color: white;
+  color: #333;
+  border: 1px solid #333;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+.contact-buttons .mail-button:hover {
+  background-color: #333;
+  color: white;
+}
+.contact-buttons .connect {
+  background-color: white;
+  color: #333;
+  border: 1px solid #333;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+.contact-buttons .connect:hover {
+  background-color: #333;
+  color: white;
+}
+.contact-buttons .office1 {
+  background-color: white;
+  color: #333;
+  border: 1px solid #333;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+.contact-buttons .office1:hover {
+  background-color: #333;
+  color: white;
+}
+
+.contact-map {
+  display: flex;
+  background-image: linear-gradient(to right, #242424, #706c6c);
+  color: white;
+  padding: 3rem 2rem;
+}
+
+.map-container {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.map-info {
+  flex: 1;
+}
+
+.map-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.map-link {
+  display: block;
+  color: #4CAF50;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.map-link:hover {
+  color: #45a049;
+}
+
+.contact-motto {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.contact-motto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-motto p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .contact-header,
+  .contact-map {
+    flex-direction: column;
+  }
+
+  .contact-image,
+  .map-container {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+/* feedback */
+/* Feedback Modal Styles */
+.feedback-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.feedback-modal {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 2rem 3rem;
+  width: 90%;
+  min-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: modalFadeIn 0.3s ease-out;
+}
+#feedback-modal{
+  margin-left: 500px;
+  margin-top: 55px;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid black;
+
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.close-button:hover {
+  color: #333;
+  transform: rotate(90deg);
+}
+
+.feedback-title {
+  font-size: 2rem;
+  color: #333;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #f8f8f8;
+}
+
+.form-group label {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  font-size: 1rem;
+  color: #777;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  padding: 0 0.5rem;
+}
+/* .form-group-c .checkbox-group{
+  display: flex;
+  gap: 10px;
+} */
+
+
+.form-group-c {
+  margin-bottom: 20px;
+  margin-left: 55px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+  /* Hide the default checkbox */
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox-group label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  /* font-size: 16px; */
+  color: #007bff;
+  font-size: 0.8rem;
+  line-height: 25px;
+  user-select: none;
+}
+
+/* Create a custom checkbox */
+.checkbox-group label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Create the checkmark (hidden when not checked) */
+.checkbox-group label::after {
+  content: '';
+  position: absolute;
+  left: 9px;
+  top: 5px;
+  width: 7px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+/* Show the checkmark when checked */
+.checkbox-group input[type="checkbox"]:checked + label::after {
+  opacity: 1;
+}
+
+/* Change border and background color when checked */
+.checkbox-group input[type="checkbox"]:checked + label::before {
+  background-color: #2196F3;
+  border-color: #2196F3;
+}
+
+/* Add focus styles for accessibility */
+.checkbox-group input[type="checkbox"]:focus + label::before {
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.3);
+}
+
+.form-group.focused input,
+.form-group.focused textarea,
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #4a90e2;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(74, 144, 226, 0.1);
+}
+
+.form-group.focused label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:not(:placeholder-shown) + label {
+  top: -0.5rem;
+  left: 0.8rem;
+  font-size: 0.8rem;
+  background-color: #fff;
+  color: #4a90e2;
+}
+
+.star-rating {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.star {
+  font-size: 2.5rem;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.star:hover {
+  transform: scale(1.1);
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+/* .checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 2.8rem;
+}
+
+.checkbox-group input {
+  width: 30px;
+} */
+
+.submit-button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding:12px 140px;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 450px;
+  margin: auto;
+}
+
+.submit-button:hover {
+  background-color: #3a7abd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(74, 144, 226, 0.2);
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  font-style: italic;
+}
+
+@media (max-width: 480px) {
+  .feedback-modal {
+    width: 95%;
+    padding: 1.5rem;
+  }
+}
+/* ========------------- ======*/
+/* .Contact {
+  margin-top: 73px;
+}
+
+.contact-hero {
+  background-color: #4e4e4e;
+  color: white;
+  padding: 4rem 0;
+}
+
+.contact-hero-content h1 {
+  font-size: 3.4em;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.contact-hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 1rem;
+}
+
+.contact-hero-arrow {
+  width: 30px;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.contact-services {
+  background-color: #f3f8f6;
+  padding: 3rem 0;
+}
+
+.contact-services h2 {
+  margin-bottom: 2rem;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button-group .btn {
+  min-width: 200px;
+}
+
+.contact-form {
+  padding: 4rem 0;
+  background-color: #fff;
+}
+
+.contact-form .form-control {
+  background: #f4fefe;
+  border-radius: 15px;
+}
+
+.required-field {
+  color: red;
+  margin-left: 3px;
+}
+
+.contact-map {
+  background-image: linear-gradient(to right, #242424, #706c6c);
+  color: white;
+  padding: 4rem 0;
+}
+
+.map-container {
+  margin-bottom: 2rem;
+}
+
+.map-info h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.map-info p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.map-info .btn-link {
+  color: #4CAF50;
+  font-size: 1.2rem;
+  padding: 0;
+  text-decoration: none;
+}
+
+.contact-slogan h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-slogan h5 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .contact-hero-content {
+    text-align: center;
+  }
+
+  .button-group .btn {
+    width: 100%;
+  }
+
+  .contact-slogan {
+    text-align: center;
+    margin-top: 2rem;
+  }
+} */
+
+/* ================ */
+
+
+/* .contact {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.contact-hero {
+  background-color: #4e4e4e;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.contact-form-container {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.error {
+  border-color: #ff3860;
+}
+
+.error-message {
+  color: #ff3860;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.contact-info {
+  display: flex;
+  max-width: 1200px;
+  margin: 4rem auto;
+  gap: 2rem;
+}
+
+.map-container {
+  flex: 2;
+}
+
+.office-info {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+.office-info h3 {
+  margin-bottom: 1rem;
+}
+
+.info-link {
+  display: block;
+  color: #4CAF50;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.info-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+  
+  .contact-info {
+    flex-direction: column;
+  }
+} */
+
+

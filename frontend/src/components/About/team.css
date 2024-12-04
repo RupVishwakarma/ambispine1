@@ -1,0 +1,401 @@
+
+.team-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .team-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .cover-container img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  
+  .profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  .profil-column {
+    display: flex;
+    flex-direction:column;
+  }
+  .avatar{
+    display: flex;
+    flex-direction:column;
+    
+    
+  }
+  .avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left:1.6rem;
+  }
+  
+  .profile-details {
+    margin-left: 20px;
+  }
+  
+  .profile-details .p-title{
+    display:flex;
+    h1 {
+        font-size: 24px;
+        margin-right: 10px;
+      }
+  }
+  
+  .profile-details p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .profile-details p svg {
+    margin-right: 5px;
+    font-size: 16px;
+  }
+  
+
+ 
+  .proffessional-container{
+    margin-top:2.3rem;
+  }
+  .proffessional-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 10px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out; 
+  }
+  
+  .proffessional-container button:hover {
+    transform: scale(1.05); 
+    background-color: #0056b3; 
+  }
+  
+  .proffessional-container button svg {
+    margin-right: 5px;
+  }
+  
+  .proffessional-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  .profile-container > div:last-child button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease-in-out; 
+  }
+  
+  .profile-container > div:last-child button svg {
+    margin-right: 5px;
+  }
+  
+  
+  .profile-container > div:last-child button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  
+  .about-me h1,
+  .Recruitments h1,
+  .People h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .about-me p,
+  .Recruitments p,
+  .People p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  
+  .resume-container-grid {
+    display: grid;
+    grid-template-columns: 8fr 4fr; 
+    gap: 20px; 
+    padding: 10px;
+  }
+  .proffessional-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .skill {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .skill-bar {
+    margin-bottom: 15px;
+  }
+  
+  .skill-bar p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background-color: #e0e0df;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 15px;
+    margin-top: 5px;
+  }
+  
+  .progress {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+  }
+  
+  
+  .progress.html {
+    width: 90%; 
+    background-color: #2965f1;
+  }
+  
+  .progress.css {
+    width: 85%;
+    background-color: #2965f1;
+  }
+  
+  .progress.javascript {
+    width: 75%;
+    background-color: #2965f1;
+  }
+  
+  .progress.python {
+    width: 80%;
+    background-color: #2965f1;
+  }
+  
+  .progress.figma {
+    width: 70%;
+    background-color: #2965f1;
+  }
+  
+  .progress.photoshop {
+    width: 60%;
+    background-color: #2965f1;
+  }
+  
+  
+  /* Overview section */
+  .card-review {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .card-review h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight:bold;
+  }
+  
+  .card-review hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+  }
+  
+  .card-review div {
+    align-items:left;
+    display: flex;
+    flex-direction:column;
+    margin: 10px 0;
+  }
+  
+  .card-review div .p-2 {
+    font-size: 0.8rem;
+    color:black ;
+    font-weight:700;
+  }
+  
+  .card-review ul {
+    list-style: disc; 
+    padding-left: 20px; 
+    margin: 10px 0; 
+  }
+  
+  
+  
+  
+  .card-review ul li {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 8px;
+  }
+  
+  .card-review button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.9rem;
+    width:200px;
+  }
+  .card-review .btn svg {
+    margin-right: 10px;
+    color: white;
+    font-size: 1rem;
+  }
+  .card-review button:hover {
+    background-color: #0056b3;
+  }
+  
+  .card-review button svg {
+    margin-right: 5px;
+  }
+  
+  .card-review div svg {
+    margin-right: 10px;
+    color: gray;
+    font-size: 1rem;
+  }
+
+  .about-contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f5f5f5;
+  }
+  
+  .about-wrapper-1{
+    text-align: center;
+    padding: 2.5rem;
+    background-color: #0066cc; 
+    border-radius: 8px;
+    height:250px;
+  }
+  
+  .heading {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+  
+  .subscription-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: #fff; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    width:100%;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .email-input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+    outline: none;
+    border: 0;
+    background-color: #fff; 
+  }
+  
+  .subscribe-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease; 
+  }
+  
+  .subscribe-btn:hover {
+    transform: scale(1.05); 
+  }
+  
+  .subscribe-btn .icon {
+    margin-right: 0.5rem;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .profile-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .profil-flex {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .proffessional-container {
+      margin-top: 20px;
+    }
+  
+    .overview {
+      margin-top: 20px;
+    }
+  }
+  

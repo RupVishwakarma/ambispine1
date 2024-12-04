@@ -1,0 +1,167 @@
+.DigitalMarket_top{
+          position: relative;
+          height: 90vh;
+}
+.Digital1{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+}
+.DigitalMarket_top .overlay{
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          width: 80%;
+          text-align: center;
+          color: white;
+          /* transform: translate(-50%, -50%); */
+          transform: translate(-50%, -50%);
+          
+}
+.Digital_top-header{
+          margin-top: 3rem ;
+          margin-bottom: 3rem;
+          font-size: 6rem;
+          font-weight: bolder;
+          /* margin-bottom: 3rem; */
+}
+.Digital_top_subtitle{
+          font-size: 2rem;
+          font-weight: normal;
+          
+}
+
+.dig_mar_container{
+          width: 400px;
+          height: 300px;         
+}
+.digital_ser{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s ease;
+}
+.digital_ser:hover{
+  transform: scale(1.2);
+}
+
+.dig_mar_head{
+      color: black;
+      font-weight: 600;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+}
+
+.Digital_mid{    
+      padding: 3rem 5rem;
+      background-color: #1379b5;
+}
+
+.sco_container {
+      height: 400px;
+      padding: 1rem;
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden; /* Ensures content doesn't overflow the container */
+      margin: 1rem;
+    }
+    
+    .sco_container .sco_show_content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      padding: 2rem;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: transform 0.5s ease-in-out;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    .sco_container .sco_show_content_hover {
+      background-color: #788d99;
+      position: absolute;
+      top: 0%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 1rem 2rem;
+      transform: translateY(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+      .dig_ser_icon{
+            background-color: transparent;
+            font-size: 2rem;
+            margin: 1rem;
+            transition: all 0.3s ease;
+      }
+      .dig_ser_icon:hover{
+            font-size: 2.4rem;
+      } 
+    .sco_container:hover .sco_show_content {
+      transform: translateY(-100%);
+    }
+    
+    .sco_container:hover .sco_show_content_hover {
+      transform: translateY(0);
+    }
+    
+    /* Specific styles for each column */
+    .sco_container_1{
+      background-color: #e8e80e;
+      color: white;
+    }
+     /* .sco_container_1 .sco_show_content_hover {
+      color: orange;
+      background-color: red;
+    } */
+    
+    .sco_container_2 {
+      background-color: rgb(226, 129, 32);
+      color: white;
+      
+    }
+    
+    .sco_container_3  {
+      background-color: blue;
+      color: white;
+    }
+    .sco_container_4  {
+      background-color: rgb(87, 87, 213);
+      color: white;
+    }.sco_container_5  {
+      background-color: rgb(253, 83, 83);
+      color: white;
+    }.sco_container_6  {
+      background-color: rgb(255, 128, 0);
+      color: white;
+    }
+    
+
+.digi_ma_se_icon{
+      font-size: 2rem;
+      color: black;
+      transition: all 0.2s ease-in;
+}
+.digi_ma_se_icon:hover{
+      font-size: 2.3rem;
+      color: rgb(228, 223, 223);
+}
+
+.con_now_btn{
+      border: none;
+      background-color: hsla(0, 0%, 38%, 0.916);
+      padding: 5px 15px;
+      font-size: 1.3rem;
+      border-radius: 10px;
+      color: white;
+}
+.arro_icon{
+      font-size: 2rem;
+      transition: all 0.2s ease-in;
+}
+.con_now_btn:hover .arro_icon{
+font-size: 2.2rem;
+}

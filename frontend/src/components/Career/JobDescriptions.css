@@ -1,0 +1,133 @@
+/* .job_description{
+
+    background-color: rgb(248, 249, 249);
+    padding: 3rem 4rem;
+    color: rgba(30,34,41,255);
+    display: flex;
+
+}
+.company_logo{
+    mix-blend-mode: clip;
+    background-color: transparent;
+    border-radius: 10%;
+    margin-bottom: 2rem;
+}
+.job_descript_top_icon {
+    background-color: #b7b7b7;
+
+    border-radius: 3px;
+    font-size: 2.2rem;
+    font-weight: 800;
+    padding: 0.4rem;
+    color: black;
+    margin-right: 1rem;
+  }
+  .back-button{
+    width: 160px;
+    height: 40px;
+    outline: none;
+    border: 1px solid white;
+    margin-top: 350px;
+    margin-left: 0px;
+    color: white;
+    background-color: rgb(37, 147, 238);
+    border-radius: 5px;
+  } */
+
+  .job_description {
+    width: 100%;
+    padding: 1rem;
+    color: rgba(30, 34, 41, 1);
+
+    p {
+        font-weight:600;
+        line-height: 1.6;
+        font-size: 0.9rem;
+    }
+    
+    span {
+        font-weight: 400;
+        font-size: 0.8rem;
+        text-align: justify;
+        margin-left: 2rem;
+    }
+}
+
+.job_descript_top_icon {
+    border-radius: 3px;
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 0.4rem;
+    color: rgb(92, 204, 245);
+    transition: transform 0.2s, color 0.2s;
+}
+
+.job_descript_top_icon:hover {
+    transform: scale(1.1);
+    color: rgb(62, 184, 225); 
+}
+
+.inter_process {
+    border: none;
+    margin: 0 10px 0 5px;
+    padding: 2px 8px;
+    border-radius: 5px;
+    color: rgb(105, 98, 98);
+    font-weight: 400;
+    background-color: rgba(198, 195, 195, 0.427);
+    transition: background-color 0.2s;
+}
+
+.inter_process:hover {
+    background-color: rgba(198, 195, 195, 0.7);
+}
+
+.back-button {
+    width: 160px;
+    height: 40px;
+    outline: none;
+    border: 1px solid white;
+    margin-left: 5px;
+    color: white;
+    background-color: rgb(43, 50, 69);
+    border-radius: 5px;
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.back-button:hover {
+    background-color: rgb(31, 37, 52);
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds slight shadow */
+}
+
+.back-button:focus {
+    border: 1px solid rgb(92, 204, 245); /* Adds focus outline */
+    box-shadow: 0px 0px 4px rgba(92, 204, 245, 0.8);
+}
+
+.job_description_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .job_description {
+        padding: 0.5rem;
+    }
+
+    .job_descript_top_icon {
+        font-size: 1.8rem;
+    }
+
+    .back-button {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    span {
+        font-size: 0.8rem;
+    }
+}

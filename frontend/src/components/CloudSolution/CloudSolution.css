@@ -1,0 +1,116 @@
+.CloudSol_top{
+          position: relative;
+          height: 90vh;
+}
+.CloudTop1{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+}
+.CloudSol_top .overlay{
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          width: 80%;
+          text-align: center;
+          color: white;
+          /* transform: translate(-50%, -50%); */
+          transform: translate(-50%, -50%);
+          
+}
+.Bussiness_top-header{
+          margin-top: 3rem ;
+          margin-bottom: 3rem;
+          font-size: 6rem;
+          font-weight: bolder;
+          /* margin-bottom: 3rem; */
+}
+.Bussiness_top_subtitle{
+          font-size: 2rem;
+          font-weight: normal;
+          
+}
+
+.cloud_computing_container{
+          width: 400px;
+          height: 300px;         
+}
+.cloud_cus_head{
+      color: #084c94;
+      font-weight: 600;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+}
+.cloud_copute{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: all 0.3s ease;
+}
+.cloud_copute:hover{
+      transform: scale(1.2);
+}
+
+.Cloud_mid{
+          
+          padding: 3rem 5rem;
+          background-color: rgba(10,105,158,255);
+          color: white;
+}
+
+.cloud_icon{
+      font-size: 2rem;
+      color: white;
+      transition: all 0.2s ease-in;
+}
+.cloud_icon:hover{
+      font-size: 2.3rem;
+      color: rgb(228, 223, 223);
+}
+.Cloud_mid_sec{
+      margin-top: 3rem;
+      padding: 3rem 0px;
+      background-color: #0b0c0d;
+}
+.cloud_service{
+      background-color: #181818;
+      margin: 1.5rem;
+      height: 300px;
+      border-radius: 10px;
+      transition: all 0.4s ease-in;
+}
+.cloud_service:hover{
+      background-color: rgba(54, 53, 53, 0.833);
+      transform: scale(1.1);
+}
+
+.cloud_ser_icon{
+      font-size: 2.5rem;
+      color: rgb(228, 223, 223);
+      background-color: transparent;
+      margin: 5px;
+      transition: all 0.2s ease-in;
+}
+.cloud_ser_icon:hover{
+      transform: scale(1.2);
+
+}
+
+
+
+
+.con_now_btn{
+      border: none;
+      background-color: hsla(0, 0%, 38%, 0.916);
+      padding: 5px 15px;
+      font-size: 1.3rem;
+      border-radius: 10px;
+      color: white;
+}
+.arro_icon{
+      font-size: 2rem;
+      transition: all 0.2s ease-in;
+}
+.con_now_btn:hover .arro_icon{
+font-size: 2.2rem;
+}

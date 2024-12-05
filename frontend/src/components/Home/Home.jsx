@@ -96,8 +96,7 @@ const HeroSection = ({ mousePosition }) => {
 
   return (
     <>
-      <section className="hero" >
-        {/* <div className="hero-overlay"></div> */}
+      <section className="hero" style={{padding:"0px"}} >
 
         <div className="video-container">
         <video autoPlay loop muted className="background-video">
@@ -108,11 +107,11 @@ const HeroSection = ({ mousePosition }) => {
         <div className="hero-content">
           <div className="hero-left">
 
-            <h1 className="hero-title">
+            <h1 className="hero-title" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
               Embracing The Future OF <br /> Technology
             </h1>
 
-            <p className="hero-description">
+            <p className="hero-description"  data-aos="fade-right" >
             Join us to discover the latest advancements in cloud. Computing artificial intelligence, and data analytics and be part of the transformation. 
             </p>
 
@@ -131,15 +130,16 @@ const HeroSection = ({ mousePosition }) => {
         </div>
       </section>
       
+      <div className="home-body-section">
       <section>
-        <div className="row justify-content-center ">
-            <div className="col-lg-4 p-3">
-            <h2 className="section-title">Maximize effeciency with intelligent automation</h2>
-            <p className="section-description">Unlock the Power of Community, Creativity, and Connection with Ambispine Technologies Experience the difference and elevate your business with our community-driven approach. </p>
-            <img src={unlock1} className="intel_auto" alt="Feature" />
+        <div className="row justify-content-center py-4 unlockback">
+            <div className="col-lg-4 px-4 ">
+            <h2 data-aos="fade-up-right" className="section-title mt-5">Maximize effeciency with intelligent automation</h2>
+            <p data-aos="fade-up-right" className="section-description">Unlock the Power of Community, Creativity, and Connection with Ambispine Technologies Experience the difference and elevate your business with our community-driven approach. </p>
+            <img data-aos="fade-right" src={unlock1} className="intel_auto" alt="Feature" />
             </div>
-            <div className="col-lg-7 p-3">
-            <img src={unlock2} className="dasboard" alt="Feature" />
+            <div className="col-lg-7 px-4" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" >
+            <img  src={unlock2} className="dasboard" alt="Feature" />
             </div>
         </div>
       </section>
@@ -165,7 +165,7 @@ const HeroSection = ({ mousePosition }) => {
       </section>
 
       <section className="network-section">
-        <h2 className="section-title">
+        <h2 className="section-title text-center">
           Spread Your Wings, Expand Your Network
         </h2>
         <p className="section-description">
@@ -175,6 +175,9 @@ const HeroSection = ({ mousePosition }) => {
         </p>
         <ImageCarousel />
       </section>
+      </div>
+
+
       <section className="product-service-section">
       <div className="container">
         <h2 className="head-tile">
@@ -184,10 +187,12 @@ const HeroSection = ({ mousePosition }) => {
           Discover the power of cutting-edge technology solutions & services.
         </p>
         <div className="row justify-content-center" >
-          {service_product.map((service) => (
-            <div
+          {service_product.map((service, index) => (
+             <div
               key={service.id}
               className="col-lg-4 service_product_con"
+              data-aos="fade-right"
+              data-aos-delay={index * 300} // Staggered delay (200ms between items)
             >
               <div className="ser_pro_con_img">
                 <img
@@ -197,13 +202,13 @@ const HeroSection = ({ mousePosition }) => {
                 />
               </div>
               <div>
-                <h4>{service.name}</h4>
-                <p className="text-light">{service.description}</p>
+                <h4 className="">{service.name}</h4>
+                <p className="text-light ">{service.description}</p>
                 <Link
                   to={`/${service.link}`}
                   className="service_link"
                 >
-                  {service.name} explore{" "}
+                  {service.name} explore
                   <FaLongArrowAltRight className="service_arro_link_icon" />
                 </Link>
               </div>

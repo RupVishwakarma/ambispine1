@@ -1,6 +1,6 @@
 /* styles.css */
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -83,7 +83,7 @@
 .hero-title {
   font-size: 4rem;
   line-height: 1.2;
-  color: #ffffff;
+  color: white;
   margin: 0;
 }
 
@@ -102,7 +102,8 @@
 }
 
 body {
-  font-family: 'Space Grotesk', sans-serif;
+  /* font-family: 'Space Grotesk', sans-serif; */
+  font-family: "Playfair Display", serif;
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -192,16 +193,18 @@ body {
   color: #000;
   transform: translateY(-2px);
 }
-
+section{
+  margin: 0rem;
+}
 /* Hero Section */
 .hero {
-  min-height: 100vh;
+  min-height: 120vh;
   position: relative;
-  margin-top: 85px;
+  margin-top: 88px;
 }
 
 .video-container{
-  min-height: 100vh;
+  min-height: 120vh;
   position: relative;
   width: 100%;
   position: relative;
@@ -219,7 +222,7 @@ body {
 .hero-overlay {
   position: absolute;
   top: 20%;
-  left: 0;
+  left: 5%;
   width: 100%;
   transform: translate(-50% -50%);
   height: 100%;
@@ -238,14 +241,6 @@ body {
   width: 100%;
 }
 
-
-.pre-title {
-  color: #00f7ff;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  opacity: 0;
-  animation: fadeInUp 0.6s ease forwards;
-}
 
 .main-title {
   color: #fff;
@@ -311,15 +306,21 @@ body {
 .play-icon {
   font-size: 0.8rem;
 }
+
+.home-body-section{
+  background-color: rgba(248, 234, 255, 0.605);
+}
 .product-service-section {
   background-color: #7199b0;
   color: white;
-  padding: 2rem;
+  padding: 5rem;
   margin-top: -2rem;
+  font-family: "Playfair Display", serif;
 }
 .head-tile{
   font-size: 2.2rem;
   color: white;
+  font-weight: 600;
 }
 .subt-title{
   font-size: 1.5rem;
@@ -327,15 +328,15 @@ body {
   margin-bottom: 2rem;
 }
 .service_product_con {
-  margin-bottom: 2rem;
   padding: 1rem;
+  width: 28%;
   transition: all .2s ease;
 }
 .service_product_con:hover{
   transform: scale(1.05);
 }
 .ser_pro_con_img {
-  background-color: #7193a9;
+  background-color: #7eaccb;
   width: 100%;
   height: 300px;
   padding: 10px;
@@ -354,7 +355,8 @@ body {
 .service_link{
   text-decoration: none;
   color: white;
-  font-size: 1.3rem;
+  font-size: 1rem;
+  color: rgb(62, 62, 167);
   transition: all .2s ease;
 }
 .service_arro_link_icon{
@@ -717,22 +719,22 @@ body {
   }
 }
 
-.features-section,
   .ai-features-section,
   .network-section {
     padding: 80px 20px;
     max-width: 1200px;
     margin: 0 auto;
-    
+    color: rgb(250, 250, 250);
   }
-  
+  .unlockback{
+    background-color: rgba(248, 234, 255, 0.605);
+  }
   .section-title {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    color: #333;
+    color: black;
     margin-bottom: 1.5rem;
-    text-align: center;
-
+    text-align: left;
   }
   
   .section-description {
@@ -740,7 +742,8 @@ body {
     color: #666;
     text-align: center;
     max-width: 800px;
-    margin: 0 auto 3rem;
+    margin: 0 auto 4rem;
+
   }
   
   .feature-image img {
@@ -838,6 +841,8 @@ body {
   
     .hero-title {
       font-size: 3rem;
+      
+      font-family: "Playfair Display", serif;
     }
   
     .hero-subtitle {

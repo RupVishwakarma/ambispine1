@@ -5,7 +5,7 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Home from "./components/Home/Home";
+import Home from "./components/Home/Home"
 import Product from "./components/Product/Product";
 import Platform from "./components/Platform/Platform";
 import Contact from "./components/Contacts/Contact";
@@ -49,7 +49,8 @@ import HomeUpdated from "./components/Home/HomeUpdated";
 import ServicePage from "./components/Service/ServicePage";
 import ChangePassword from "./components/Admin/ChangePassword";
 import { useSelector } from "react-redux";
-
+import 'aos/dist/aos.css'; // AOS animations CSS
+import AOS from 'aos';
 export const MyContext = createContext();
 
 const AdminRoutes = () => (
@@ -104,6 +105,14 @@ function App() {
   useEffect(() => {
     const token = localStorage.getItem("token");
     setIsLogin(!!token);
+  }, []);
+  
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true,     // Animation triggers only once
+      easing: 'ease-in-out', // Easing for animations
+    });
   }, []);
 
   useEffect(() => {

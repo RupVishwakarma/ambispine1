@@ -20,7 +20,7 @@
       }
       
       .footer-title::after {
-        content: 'jjlkkjhhjj';
+        content: '';
         position: absolute;
         left: 0;
         bottom: -4px;

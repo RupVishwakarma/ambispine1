@@ -132,7 +132,7 @@ const HeroSection = ({ mousePosition }) => {
       
       <div className="home-body-section">
       <section>
-        <div className="row justify-content-center py-4 unlockback">
+        <div className="row justify-content-center py-5">
             <div className="col-lg-4 px-4 ">
             <h2 data-aos="fade-up-right" className="section-title mt-5">Maximize effeciency with intelligent automation</h2>
             <p data-aos="fade-up-right" className="section-description">Unlock the Power of Community, Creativity, and Connection with Ambispine Technologies Experience the difference and elevate your business with our community-driven approach. </p>

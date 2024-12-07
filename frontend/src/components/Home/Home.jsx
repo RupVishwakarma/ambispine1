@@ -2,16 +2,18 @@ import React, { useRef, useEffect, useState } from "react";
 import Homeimg from "../../Images/Homeimg.jpg";
 import ImageCarousel from "./ImageCarousel";
 import ambiup from '../../Images/ambiup.mp4';
-import unlock1 from '../../Images/unlock1.png';
-import unlock2 from '../../Images/unlock2.jpg';
-
 import product3 from '../../Images/product3.png'
 import product4 from '../../Images/product4.png'
 import product5 from '../../Images/product5.png'
 import product6 from '../../Images/product6.png'
 import product8 from '../../Images/product8.png'
 import product9 from '../../Images/product9.png'
-import { motion } from 'framer-motion';
+import carousel_1 from "../../Images/carousel-1.jpg";
+import carousel_2 from "../../Images/carousel-2.jpg";
+import carousel_3 from "../../Images/carousel-3.jpg";
+import carousel_4 from "../../Images/carousel-4.jpg";
+import dashboar from '../../Images/dashboar.avif';
+import clouddata1 from '../../Images/clouddata1.jpg';
 
 import { Link } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
@@ -72,6 +74,55 @@ const HeroSection = ({ mousePosition }) => {
 
   ]
 
+  const spreadsServices = [
+    {
+      src: carousel_1,
+      alt: "Image 1",
+      text: "Implies that a stronger network can provide valuable support and tools highlights the potential for new experiences and possibilities",
+      headText: "Access the resources",
+    },
+    {
+      src: carousel_2,
+      alt: "Image 2",
+      text: "Emphasizes the importance of accessing valuable resources and support through a strong network and follow your passion with following your choices.",
+      headText: "Empower your life",
+    },
+    {
+      src: carousel_3,
+      alt: "Image 3",
+      headText: "Learn new skills",
+      text: "Expand your network, and soar to new heights! By spreading your wings and expanding your network, you can unlock your full potential and achieve your dreams!",
+    },
+    {
+      src: carousel_4,
+      alt: "Image 4",
+      headText: "Connect, Capture And Share",
+      text: "The art of connection is here connecting you to the world, one person at a time intentional networking and connection and it's potential impact, let's connect to the world.",
+    },
+  ];
+  const clouddata = [
+    {
+      id: 1,
+      content: "Embrace the booster of Cloud Computing",
+      hoverContent2: "Ambispine Technologies' Cloud Services provide a secure, scalable, and reliable infrastructure for your business applications. Our cloud solutions enable you to reduce costs, increase agility, and improve collaboration.",
+      src: clouddata1,
+     
+    },
+    {
+      id: 2,
+      content: "Elevate Your Business with Cloud Expertise",
+      hoverContent2: "Transform your business with Ambispine Technologies' Cloud Services. Our secure, scalable, and reliable infrastructure boosts agility, collaboration, and cost savings. Discover the power of cloud computing with us.",
+      src: carousel_2,
+    },
+    {
+      id: 3,
+      content: "Conversion Rate Optimization (CRO)",
+      hoverContent2: "CRO is crucial for a successful digital marketing strategy, as it increases the likelihood of visitors turning into customers.",
+      src: carousel_2
+    },
+  ]
+
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -131,18 +182,36 @@ const HeroSection = ({ mousePosition }) => {
       </section>
       
       <div className="home-body-section">
-      <section>
-        <div className="row justify-content-center py-5">
-            <div className="col-lg-4 px-4 ">
-            <h2 data-aos="fade-up-right" className="section-title mt-5">Maximize effeciency with intelligent automation</h2>
-            <p data-aos="fade-up-right" className="section-description">Unlock the Power of Community, Creativity, and Connection with Ambispine Technologies Experience the difference and elevate your business with our community-driven approach. </p>
-            <img data-aos="fade-right" src={unlock1} className="intel_auto" alt="Feature" />
-            </div>
-            <div className="col-lg-7 px-4" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" >
-            <img  src={unlock2} className="dasboard" alt="Feature" />
-            </div>
+      <section style={{paddingTop:"120px"}}>
+        <div className="text-center mx-auto"style={{width:"70%"}}>
+        <h2 data-aos="fade-up-right" className="section-title mt-5">Maximize effeciency with <br />intelligent automation</h2>
+        <p data-aos="fade-up-right" className="section-description">Unlock the Power of Community, Creativity, and Connection with Ambispine Technologies Experience the difference and elevate your business with our community-driven approach. </p>
+        <img  src={dashboar} className="dasboard" alt="Feature" />
+
         </div>
       </section>
+      
+      <div className="container mt-5">
+      <div className="row  justify-content-center">
+      {
+      clouddata.map((data, index)=>(
+        <div className="col-lg-4 wrapper-container" key={index}
+        data-aos="fade-right"
+        data-aos-delay={index * 100} >
+          <div className="wrapper-img">
+            <img src={data.src}  alt={data.alt} />
+            <div className="content ">
+              <h4 className=" content-header">{data.content}</h4>
+              <p className="content-subtitle">{data.hoverContent2}</p>
+            </div>
+          </div>
+        </div>
+      ))
+      }
+
+      </div>
+      </div>
+      
 
       <section ref={contentRef} className="ai-features-section">
         <h2 className="section-title">AI-Powered Solutions</h2>
@@ -164,22 +233,12 @@ const HeroSection = ({ mousePosition }) => {
         </div>
       </section>
 
-      <section className="network-section">
-        <h2 className="section-title text-center">
-          Spread Your Wings, Expand Your Network
-        </h2>
-        <p className="section-description">
-          Expand your reach and influence. Grow your connections, increase your
-          opportunities, and access to resources. Make a bond with new
-          possibilities and horizons.
-        </p>
-        <ImageCarousel />
-      </section>
+      
       </div>
 
 
       <section className="product-service-section">
-      <div className="container">
+      <div className="">
         <h2 className="head-tile">
           Empowering Innovation: unleashing digital potential.
         </h2>
@@ -200,9 +259,8 @@ const HeroSection = ({ mousePosition }) => {
                   className="product_image"
                   alt={`${service.name}`}
                 />
-              </div>
-              <div>
-                <h4 className="">{service.name}</h4>
+                <div>
+                <h4 className=" mt-4">{service.name}</h4>
                 <p className="text-light ">{service.description}</p>
                 <Link
                   to={`/${service.link}`}
@@ -212,12 +270,47 @@ const HeroSection = ({ mousePosition }) => {
                   <FaLongArrowAltRight className="service_arro_link_icon" />
                 </Link>
               </div>
+              </div>
+
+              
             </div>
           ))}
         </div>
       </div>
     </section>
+    <section className="network-section" >
+        <div className="row justify-content-evenly">
+          <div className="col-md-5" data-aos="fade-right">
+          <h2 className="section-title text-start">
+          Spread Your Wings, Expand Your Network
+        </h2>
+        <p className="section-description text-start mt-3 pt-4">
+          Expand your reach and influence. Grow your connections, increase your
+          opportunities, and access to resources. Make a bond with new
+          possibilities and horizons.
+        </p>
+          </div>
+          <div className="col-md-5" data-aos="fade-left">
+          <img src={carousel_2} className="w-100 h-100 img-fluid" />
+          </div>
 
+        </div>    
+        {/* <ImageCarousel /> */}
+        <div className="row" style={{marginTop:"50px"}}>
+          {
+         spreadsServices.map((data, index)=>{
+          return(<div key={index}  data-aos="fade-right"
+            data-aos-delay={index * 200} className="col-lg-3 spreads-services-container">
+            <div className="spreads-service-img">
+              <img src={data.src} alt={data.alt} />
+            </div>
+            <h4 className="text-dark mt-2 p ">{data.headText}</h4>
+            <p>{data.text}</p>
+        </div>)
+         })
+          }
+        </div>
+      </section>
     </>
   );
 };

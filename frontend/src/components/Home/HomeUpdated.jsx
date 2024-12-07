@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import Header from "./Header";
-// import HeroSection from "./HeroSection";
+
 import "./HomeUpdated.css";
 import HeroSection from "./Home";
 import Header from "../Header/Header";

@@ -11,8 +11,7 @@
 .header__logo {
   display: flex;
   align-items: center;
-  text-decoration: none;
-  transition: transform 0.3s ease;
+
 }
 
 .header__logo:hover {
@@ -20,10 +19,12 @@
 }
 
 .header__logo-img {
-  height: 45px;
-  width: auto;
-  filter: drop-shadow(0 0 8px rgba(0, 247, 255, 0.3));
-  animation: logoGlow 3s infinite alternate;
+  width: 160px; 
+  height: 60px;
+  max-height: 80%; 
+  object-fit: contain;
+  transform: scale(1.5);
+  padding: 5px;
 }
 
 /* Text Logo Option */
@@ -115,24 +116,28 @@ body {
   width: 100%;
   z-index: 1000;
   transition: all 0.4s ease;
-  padding: 1.2rem 0;
-  background-color: #0f0f0f;
+  padding: 0.5rem 0;
+  background-color: rgb(240, 240, 240);
+  color: black;
 }
 
 .header.scrolled {
-  background: rgba(15, 15, 15, 0.95);
+  /* background: rgba(15, 15, 15, 0.95); */
+  background-color: rgb(255, 255, 255);
   backdrop-filter: blur(10px);
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  height: 50;
 }
 
 .header-container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 50px;
 }
 
 .logo {
@@ -153,12 +158,13 @@ body {
 }
 
 .nav-link {
-  color: #fff;
+  color: black;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
   position: relative;
   padding: 0.5rem 0;
+
 }
 
 .nav-link::after {
@@ -178,11 +184,11 @@ body {
 
 .contact-btn {
   background: transparent;
-  color: #fff;
+  color: black;
   border: 2px solid #00f7ff;
-  padding: 0.8rem 1.5rem;
+  padding: 0.4rem 1.5rem;
   border-radius: 50px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
   font-family: 'Space Grotesk', sans-serif;
@@ -200,7 +206,7 @@ section{
 .hero {
   min-height: 120vh;
   position: relative;
-  margin-top: 88px;
+  margin-top: 65px;
 }
 
 .video-container{
@@ -310,12 +316,97 @@ section{
 .home-body-section{
   background-color: rgba(248, 234, 255, 0.605);  
 }
+.spreads-services-container{
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.spreads-service-img{
+  width: 100%;
+  height: 200px;
+ 
+}
+.spreads-service-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+.spreads-service-img img:hover{
+  transform: scale(1.03);
+}
+
+
+.wrapper-container{
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+.wrapper-img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+}
+.wrapper-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+ 
+
+}
+.wrapper-container .wrapper-img img{
+  opacity: 0.6;
+}
+.content{
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+}
+.wrapper-container:hover .content{
+  opacity: 1;
+  transform: translate(-50%, -50%) translateY(0);
+}
+
+.content-header{
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  transform: translateY(20px);
+}
+.wrapper-container:hover .content-header {
+  transform: translateY(0);
+}
+
+.content-subtitle{
+  font-size: 1rem;
+  color: white;
+}
+
+
 .product-service-section {
-  background-color: #7199b0;
+  background-color: #00051d;
   color: white;
   padding: 5rem;
   margin-top: -2rem;
-  font-family: "Playfair Display", serif;
+  font-family: 'Times New Roman', serif;
 }
 .head-tile{
   font-size: 2.2rem;
@@ -329,7 +420,8 @@ section{
 }
 .service_product_con {
   padding: 1rem;
-  width: 28%;
+  width: 30%;
+  height: 500px;
   transition: all .2s ease;
 }
 .service_product_con:hover{
@@ -337,8 +429,8 @@ section{
 }
 .ser_pro_con_img {
   background-color: #7eaccb;
-  width: 100%;
-  height: 300px;
+  width: 300px;
+  height: 250px;
   padding: 10px;
   margin-bottom: 1rem;
  
@@ -356,7 +448,7 @@ section{
   text-decoration: none;
   color: white;
   font-size: 1rem;
-  color: rgb(62, 62, 167);
+  color: rgb(7, 7, 199);
   transition: all .2s ease;
 }
 .service_arro_link_icon{
@@ -526,8 +618,7 @@ section{
   left: 50%;
   transform: translateX(-50%);
   width: 900px;
-  background: #373f47;
-  border-radius: 12px;
+  background: rgb(251, 253, 255);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   opacity: 0;
   visibility: hidden;
@@ -566,7 +657,7 @@ section{
 .service-icon {
   font-size: 2.4rem;
   flex-shrink: 0;
-  color: white;
+  color: black;
 }
 
  .service-content {
@@ -576,7 +667,7 @@ section{
 .service-title {
   font-size: 1.1rem;
   font-weight: 500;
-  color: white;
+  color: black;
   margin-bottom: 8px;
 
 }
@@ -591,7 +682,7 @@ section{
 .feature-tag {
   font-size: 12px;
   padding: 4px 8px;
-  color: white;
+  color: black;
   border-radius: 100px;
   text-decoration: none;
 }
@@ -730,19 +821,21 @@ section{
     background-color: rgba(248, 234, 255, 0.605);
   }
   .section-title {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 600;
     color: black;
     margin-bottom: 1.5rem;
-    text-align: left;
+    font-family: "Arial Narrow";
+    text-align: center;
   }
   
   .section-description {
-    font-size: 1.1rem;
+    font-size: 2rem;
     color: #666;
     text-align: center;
-    max-width: 800px;
+    /* max-width: 800px; */
     margin: 0 auto 4rem;
+    font-family: "Arial Narrow";
 
   }
   
@@ -766,16 +859,12 @@ section{
   }
   .dasboard{
     width: 100%;
-    height: auto;
+    height: 650px;
     object-fit: cover;
     border-radius: 5px;
-    transition: all 0.2s ease;
 
   }
-  .dasboard:hover{
-    transform: scale(1.04);
-  }
-  
+
   .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -860,6 +949,9 @@ section{
   
     .hero-image {
       max-width: 80%;
+    }
+    .nav-link{
+      font-size: 0.8rem;
     }
   }
   

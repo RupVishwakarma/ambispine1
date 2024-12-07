@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../Images/AmbiSpine_logo.png";
@@ -9,8 +8,15 @@ import { FaBusinessTime } from "react-icons/fa";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { IoIosCloudUpload } from "react-icons/io";
+import { IoReorderThreeOutline } from "react-icons/io5";
+import './Header.css';
 const Header = ({ isScrolled }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [ mobileView, setMobileView] = useState(false);
+
+  const handleMobileView = () =>{
+    setMobileView(!mobileView);
+  }
 
   const servicesdrop = [
     {
@@ -100,12 +106,10 @@ const Header = ({ isScrolled }) => {
   return (
     <header className={`header ${isScrolled ? "scrolled" : ""}`}>
       <div className="header-container">
-
         <Link to="/" className="header__logo">
           <img src={logo} alt="AmbiSpine Logo" className="header__logo-img" />
-
         </Link>
-        <nav className="nav-menu">
+        <nav className={`nav-menu ${mobileView ? "showMobileHeader": ""} `}>
           <Link to="/" className="nav-link">
             Home
           </Link>
@@ -174,6 +178,8 @@ const Header = ({ isScrolled }) => {
             Contact Us
           </Link>
         </nav>
+
+        <IoReorderThreeOutline onClick={handleMobileView} className="mobile-toggle" />
       </div>
     </header>
   );

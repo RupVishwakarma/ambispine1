@@ -5,6 +5,8 @@ import "./ImageCarousel.css";
 import carousel_1 from "../../Images/carousel-1.jpg";
 import carousel_2 from "../../Images/carousel-2.jpg";
 import carousel_3 from "../../Images/carousel-3.jpg";
+import carousel_4 from "../../Images/carousel-4.jpg";
+
 import { Link } from "react-router-dom";
 
 const images = [
@@ -25,6 +27,12 @@ const images = [
     alt: "Image 3",
     headText: "Learn new skills",
     text: "Expand your network, and soar to new heights! By spreading your wings and expanding your network, you can unlock your full potential and achieve your dreams!",
+  },
+  {
+    src: carousel_4,
+    alt: "Image 4",
+    headText: "Connect, Capture And Share",
+    text: "The art of connection is here connecting you to the world, one person at a time intentional networking and connection and it's potential impact, let's connect to the world.",
   },
 ];
 
@@ -99,3 +107,4 @@ const ImageCarousel = () => {
 };
 
 export default ImageCarousel;
+

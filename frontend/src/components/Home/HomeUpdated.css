@@ -6,7 +6,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.app1{
+  background-color: #ffffff;
+}
 /* Logo Container Styles */
 .header__logo {
   display: flex;
@@ -20,7 +22,7 @@
 
 .header__logo-img {
   width: 160px; 
-  height: 60px;
+  height: 90px;
   max-height: 80%; 
   object-fit: contain;
   transform: scale(1.5);
@@ -73,6 +75,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   padding: 0 20px;
+  font-family: system-ui;
 }
 
 .hero-left {
@@ -86,6 +89,7 @@
   line-height: 1.2;
   color: white;
   margin: 0;
+  font-family: system-ui;
 }
 
 .gradient-text {
@@ -104,7 +108,7 @@
 
 body {
   /* font-family: 'Space Grotesk', sans-serif; */
-  font-family: "Playfair Display", serif;
+  font-family: system-ui;
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -314,16 +318,26 @@ section{
 }
 
 .home-body-section{
-  background-color: rgba(248, 234, 255, 0.605);  
+  /* background-color: rgba(248, 234, 255, 0.605);   */
+  background-color: white;
 }
 .spreads-services-container{
-  padding: 1rem;
+  padding: 1.5rem;
   margin-top: 2rem;
 }
 .spreads-service-img{
   width: 100%;
   height: 200px;
- 
+}
+.spreads-top-img-container{
+  height: 100vh;
+  margin-top: 100px;
+}
+.spreads-top{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 .spreads-service-img img{
   width: 100%;
@@ -357,8 +371,7 @@ section{
   object-fit: cover;
   opacity: 1;
   transition: opacity 0.4s ease;
- 
-
+  border-radius: 10px;
 }
 .wrapper-container .wrapper-img img{
   opacity: 0.6;
@@ -378,6 +391,7 @@ section{
   left: 50%;
   top: 50%;
   transform: translate(-50%, 50%);
+  border-radius: 10px;
 }
 .wrapper-container:hover .content{
   opacity: 1;
@@ -404,33 +418,53 @@ section{
 .product-service-section {
   background-color: #00051d;
   color: white;
-  padding: 5rem;
+  padding: 3rem 3rem 7rem 3rem;
   margin-top: -2rem;
-  font-family: 'Times New Roman', serif;
+  font-family: system-ui;
+  
 }
-.head-tile{
-  font-size: 2.2rem;
-  color: white;
-  font-weight: 600;
-}
-.subt-title{
-  font-size: 1.5rem;
-  color: white;
+.prod_title{
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  text-wrap: pretty;
   margin-bottom: 2rem;
 }
+.prod_descri{
+  color: rgb(235, 235, 235);
+  font-size: 1.2rem;
+  font-weight: 200;
+  text-align: justify
+
+}
+
+.head-tile{
+  font-size: 3.3rem;
+  color: white;
+  font-weight: 500;
+}
+.subt-title{
+  font-size: 1.4rem;
+  color: white;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  
+}
+
 .service_product_con {
-  padding: 1rem;
+  padding: 2rem;
   width: 30%;
   height: 500px;
   transition: all .2s ease;
+  text-wrap: pretty;
+
 }
 .service_product_con:hover{
   transform: scale(1.05);
 }
 .ser_pro_con_img {
   background-color: #7eaccb;
-  width: 300px;
-  height: 250px;
+  width: 100%;
+  height: 200px;
   padding: 10px;
   margin-bottom: 1rem;
  
@@ -440,6 +474,7 @@ section{
   height: 100%;
   object-fit: contain;
   transition: all .2s ease;
+  
 }
 .product_image:hover{
   transform: scale(1.05);
@@ -447,17 +482,19 @@ section{
 .service_link{
   text-decoration: none;
   color: rgb(214, 214, 214);
-  font-size: 1rem;
+  font-size: 1.3rem;
   transition: all .2s ease;
+  font-weight: 500;
 }
 .service_arro_link_icon{
   font-size: 1.8rem;
   transition: all .2s ease;
+  padding-left: 8px;
 }
 
 .service_link:hover .service_arro_link_icon{
   font-size: 2.3rem;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 .floating-cards {
@@ -711,9 +748,10 @@ section{
   .dropdown-mega {
     width: 90vw;
   }
+
   .service_product_con{
-    width: 45%;
-    padding: 1rem;
+    width: 40%;
+    margin: 1rem;
   }
 }
 
@@ -726,6 +764,10 @@ section{
     padding: 1rem;
 
   }
+  .product-service-section {
+    padding: 5rem;
+
+}
   .dropdown-mega {
     position: static;
     width: 100%;
@@ -824,28 +866,45 @@ section{
     margin: 0 auto;
     color: rgb(250, 250, 250);
   }
-  .unlockback{
+  /* .unlockback{
     background-color: rgba(248, 234, 255, 0.605);
-  }
+  } */
+ 
   .section-title {
     font-size: 3rem;
     font-weight: 600;
     color: black;
     margin-bottom: 1.5rem;
-    font-family: "Arial Narrow";
+    font-family: system-ui;
     text-align: center;
   }
   
   .section-description {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #666;
     text-align: center;
     /* max-width: 800px; */
     margin: 0 auto 4rem;
-    font-family: "Arial Narrow";
+    font-family: system-ui;
 
   }
-  
+  .spreads-header{
+    font-size: 4rem;
+    /* color: rgb(3, 7, 204); */
+    margin-bottom: 2rem;
+  }
+  .spreads-pro-link{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 300;
+   
+  }
+  .spreads-subtitle{
+    font-size: 1.4rem;
+    text-align: left;
+     margin-bottom: 2rem;
+  }
   .feature-image img {
     width: 100%;
     height: auto;
@@ -884,6 +943,7 @@ section{
     padding: 30px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
   }
   
   .feature-card:hover {
@@ -936,9 +996,8 @@ section{
     }
   
     .hero-title {
-      font-size: 3rem;
-      
-      font-family: "Playfair Display", serif;
+      font-size: 3rem;   
+      font-family: system-ui;
     }
   
     .hero-subtitle {

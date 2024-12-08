@@ -13,7 +13,10 @@ import carousel_2 from "../../Images/carousel-2.jpg";
 import carousel_3 from "../../Images/carousel-3.jpg";
 import carousel_4 from "../../Images/carousel-4.jpg";
 import dashboar from '../../Images/dashboar.avif';
-import clouddata1 from '../../Images/clouddata1.jpg';
+import dasboard from '../../Images/dasboard.png';
+import clouddata3 from '../../Images/clouddata3.jpg';
+import cloudata2 from '../../Images/cloudata2.jpg';
+import cloudata1 from '../../Images/cloudata1.jpg';
 
 import { Link } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
@@ -52,7 +55,7 @@ const HeroSection = ({ mousePosition }) => {
     },
     {
       id: 4,
-      name: "Web Designing Solution",
+      name: "Designing Solution",
       description: "Boost Online Engagement with Our Responsive Web Design Services. Transform your digital landscape and captivate your audience with our expert web designing solutions. Explore our services today!",
       link: "web-designe-solution",
       img : product4,
@@ -66,7 +69,7 @@ const HeroSection = ({ mousePosition }) => {
     },
     {
       id: 6,
-      name: "Digital Marketing Solution",
+      name: "Digital  Solution",
       description: "Maximize Online Visibility with Our Data-Driven Digital Marketing Strategies. Reach, engage, and convert your target audience with our expert digital marketing solutions. Boost your online presence now!",
       link: "digital-marketing-solution",
       img : product6,
@@ -105,20 +108,20 @@ const HeroSection = ({ mousePosition }) => {
       id: 1,
       content: "Embrace the booster of Cloud Computing",
       hoverContent2: "Ambispine Technologies' Cloud Services provide a secure, scalable, and reliable infrastructure for your business applications. Our cloud solutions enable you to reduce costs, increase agility, and improve collaboration.",
-      src: clouddata1,
+      src: cloudata1,
      
     },
     {
       id: 2,
       content: "Elevate Your Business with Cloud Expertise",
       hoverContent2: "Transform your business with Ambispine Technologies' Cloud Services. Our secure, scalable, and reliable infrastructure boosts agility, collaboration, and cost savings. Discover the power of cloud computing with us.",
-      src: carousel_2,
+      src: cloudata2,
     },
     {
       id: 3,
-      content: "Conversion Rate Optimization (CRO)",
-      hoverContent2: "CRO is crucial for a successful digital marketing strategy, as it increases the likelihood of visitors turning into customers.",
-      src: carousel_2
+      content: "Elevate Your Business with Cloud Expertise",
+      hoverContent2: "Transform your business with Ambispine Technologies' Cloud Services. Our secure, scalable, and reliable infrastructure boosts agility, collaboration, and cost savings. Discover the power of cloud computing with us.",
+      src: clouddata3
     },
   ]
 
@@ -184,9 +187,9 @@ const HeroSection = ({ mousePosition }) => {
       <div className="home-body-section">
       <section style={{paddingTop:"120px"}}>
         <div className="text-center mx-auto"style={{width:"70%"}}>
-        <h2 data-aos="fade-up-right" className="section-title mt-5">Maximize effeciency with <br />intelligent automation</h2>
-        <p data-aos="fade-up-right" className="section-description">Unlock the Power of Community, Creativity, and Connection with Ambispine Technologies Experience the difference and elevate your business with our community-driven approach. </p>
-        <img  src={dashboar} className="dasboard" alt="Feature" />
+        <h2 data-aos="zoom-in" className="section-title mt-5">Maximize effeciency with intelligent  <br />automation</h2>
+        <p data-aos="zoom-in" className="section-description">Unlock the Power of Community, Creativity, and Connection with Ambispine Technologies Experience the difference and elevate your business with our community-driven approach. </p>
+        <img  src={dasboard} className="dasboard" alt="Feature" />
 
         </div>
       </section>
@@ -214,7 +217,7 @@ const HeroSection = ({ mousePosition }) => {
       
 
       <section ref={contentRef} className="ai-features-section">
-        <h2 className="section-title">AI-Powered Solutions</h2>
+        <h2 className="section-title pb-5">AI-Powered Solutions</h2>
         <div className="features-grid">
           {contentItems.map((item, index) => (
             <div
@@ -227,7 +230,7 @@ const HeroSection = ({ mousePosition }) => {
                 animationDelay: `${index * 0.2}s`,
               }}
             >
-              <p>{item}</p>
+              <p className="fs-5">{item}</p>
             </div>
           ))}
         </div>
@@ -245,13 +248,13 @@ const HeroSection = ({ mousePosition }) => {
         <p className="subt-title">
           Discover the power of cutting-edge technology solutions & services.
         </p>
-        <div className="row justify-content-center" >
+        <div className="row gap-5 justify-content-between" >
           {service_product.map((service, index) => (
              <div
               key={service.id}
               className=" col-lg-4 service_product_con"
-              data-aos="fade-right"
-              data-aos-delay={index * 300} // Staggered delay (200ms between items)
+              // data-aos="fade-right"
+              // data-aos-delay={index * 300} // Staggered delay (200ms between items)
             >
               <div className="ser_pro_con_img">
                 <img
@@ -260,13 +263,13 @@ const HeroSection = ({ mousePosition }) => {
                   alt={`${service.name}`}
                 />
                 <div>
-                <h4 className=" mt-4">{service.name}</h4>
-                <p className="text-light ">{service.description}</p>
+                <h4 className="prod_title">{service.name}</h4>
+                <p className="prod_descri balanced">{service.description}</p>
                 <Link
                   to={`/${service.link}`}
                   className="service_link"
                 >
-                  {service.name} explore
+                  Explore {service.name} 
                   <FaLongArrowAltRight className="service_arro_link_icon" />
                 </Link>
               </div>
@@ -278,39 +281,44 @@ const HeroSection = ({ mousePosition }) => {
         </div>
       </div>
     </section>
-    <section className="network-section" >
-        <div className="row justify-content-evenly">
-          <div className="col-md-5" data-aos="fade-right">
-          <h2 className="section-title text-start">
+
+    <div className="row justify-content-evenly mt-5 ">
+          <div className="col-md-5 my-auto" >
+          <h2 className="spreads-header " data-aos="fade-up">
           Spread Your Wings, Expand Your Network
         </h2>
-        <p className="section-description text-start mt-3 pt-4">
+        <p className="spreads-subtitle " data-aos="fade-up">
           Expand your reach and influence. Grow your connections, increase your
           opportunities, and access to resources. Make a bond with new
           possibilities and horizons.
         </p>
+        <Link to="/product" className="spreads-pro-link" data-aos="fade-up"> Learn More <FaLongArrowAltRight className="service_arro_link_icon"/></Link>
           </div>
-          <div className="col-md-5" data-aos="fade-left">
-          <img src={carousel_2} className="w-100 h-100 img-fluid" />
+          <div className="col-md-6 spreads-top-img-container" >
+          <img src={carousel_2} className=" spreads-top" />
           </div>
 
-        </div>    
+        </div> 
+    <section className="network-section" >    
         {/* <ImageCarousel /> */}
         <div className="row" style={{marginTop:"50px"}}>
           {
          spreadsServices.map((data, index)=>{
-          return(<div key={index}  data-aos="fade-right"
-            data-aos-delay={index * 200} className="col-lg-3 spreads-services-container">
+          return(<div key={index}  data-aos="fade-down"
+            data-aos-delay={index * 200} className=" col-md-6 col-lg-3 spreads-services-container">
             <div className="spreads-service-img">
               <img src={data.src} alt={data.alt} />
             </div>
-            <h4 className="text-dark mt-2 p ">{data.headText}</h4>
+            <h4 className="text-dark mt-2  ">{data.headText}</h4>
             <p>{data.text}</p>
         </div>)
          })
           }
         </div>
       </section>
+     
+        
+      
     </>
   );
 };

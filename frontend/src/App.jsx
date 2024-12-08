@@ -110,7 +110,7 @@ function App() {
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration in milliseconds
-      once: true,     // Animation triggers only once
+      once: false,
       easing: 'ease-in-out', // Easing for animations
     });
   }, []);

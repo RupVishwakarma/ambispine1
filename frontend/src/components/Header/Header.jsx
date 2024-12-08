@@ -521,11 +521,9 @@ const Header = ({ isScrolled }) => {
     },
   ]
   const toggleService = (id) => {
-    console.log(id);
-    console.log(expandedService);
     setExpandedService(expandedService === id ? null : id);
-    console.log(expandedService);
   };
+  
   return (
     <header className={`header ${isScrolled ? "scrolled" : ""}`}>
       

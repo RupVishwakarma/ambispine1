@@ -45,6 +45,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    font-family: system-ui;
   }
   
   .text-content {
@@ -59,6 +60,7 @@
     color: var(--text-primary);
     margin-bottom: 0.5rem;
     animation: fadeInUp 1s ease-out;
+    font-family: system-ui;
   }
   
   .hero-subtitle {

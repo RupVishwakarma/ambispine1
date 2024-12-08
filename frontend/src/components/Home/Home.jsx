@@ -249,7 +249,7 @@ const HeroSection = ({ mousePosition }) => {
           {service_product.map((service, index) => (
              <div
               key={service.id}
-              className="col-lg-4 service_product_con"
+              className=" col-lg-4 service_product_con"
               data-aos="fade-right"
               data-aos-delay={index * 300} // Staggered delay (200ms between items)
             >

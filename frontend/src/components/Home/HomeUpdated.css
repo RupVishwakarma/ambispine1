@@ -712,13 +712,21 @@ section{
   .dropdown-mega {
     width: 90vw;
   }
+  .service_product_con{
+    width: 45%;
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
   .nav-menu {
     display: none; /* You might want to implement a mobile menu */
   }
+  .service_product_con{
+    width: 100%;
+    padding: 1rem;
 
+  }
   .dropdown-mega {
     position: static;
     width: 100%;

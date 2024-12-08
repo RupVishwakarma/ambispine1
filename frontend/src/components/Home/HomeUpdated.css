@@ -446,9 +446,8 @@ section{
 }
 .service_link{
   text-decoration: none;
-  color: white;
+  color: rgb(214, 214, 214);
   font-size: 1rem;
-  color: rgb(7, 7, 199);
   transition: all .2s ease;
 }
 .service_arro_link_icon{
